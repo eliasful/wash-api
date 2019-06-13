@@ -50,6 +50,10 @@ module.exports = {
       },
       lng: {
         type: 'string',
+      },
+      userServices: {
+        collection: 'userService',
+        via: 'user'
       }
   }
 };
