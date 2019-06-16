@@ -18,7 +18,9 @@ module.exports = {
     quantity: 'integer',
     status: 'string',
     estimatedTime: 'float',
-    acceptedIn: 'date'
+    acceptedIn: 'datetime',
+    ratingOwner: 'integer',
+    ratingProfessional: 'integer',
   }
 };
 
