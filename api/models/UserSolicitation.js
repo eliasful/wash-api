@@ -15,7 +15,10 @@ module.exports = {
       model: 'userService'
     },
     observation: 'string',
-    quantity: 'integer'
+    quantity: 'integer',
+    status: 'string',
+    estimatedTime: 'float',
+    acceptedIn: 'date'
   }
 };
 
