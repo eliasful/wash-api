@@ -79,7 +79,8 @@ module.exports.connections = {
     host: 'localhost',
     user: 'postgres', // optional
     password: 'docker', // optional
-    database: 'wash' //optional
+    database: 'wash',
+    port: '5434'//optional
   }
 
 
