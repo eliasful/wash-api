@@ -23,9 +23,16 @@ module.exports.policies = {
 
   'UserController': {
     'create': true,
-    'login': true
-  }
+    'login': true,
+    'find': true,
+    'findAll': true,
+    'check': true,
+  },
 
+  'ServiceTypeController': {
+    'find': true,
+    'findAll': true
+  },
   /***************************************************************************
    *                                                                          *
    * Default policy for all controllers and actions (`true` allows public     *
