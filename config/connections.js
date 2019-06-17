@@ -80,7 +80,7 @@ module.exports.connections = {
     user: 'postgres', // optional
     password: 'docker', // optional
     database: 'wash',
-    port: '5434'//optional
+    port: '5432'//optional
   }
 
 
