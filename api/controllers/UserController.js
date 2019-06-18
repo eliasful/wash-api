@@ -8,7 +8,7 @@ const bcrypt = require('bcrypt');
 
 module.exports = {
   login(req, res) {
-    const email = req.body.email
+    const email = req.body.email;
     if (!email || !req.body.password) {
       return res.badRequest({
         err: "Email or password cannot be empty"

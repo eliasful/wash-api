@@ -41,13 +41,6 @@ module.exports = {
       collection: 'userService',
       via: 'user'
     },
-
-    toJSON: function() {
-      const obj = this.toObject();
-      delete obj.password;
-
-      return obj;
-    }
   },
   beforeCreate(values, cb) {
     if (!values.password) {
@@ -58,7 +51,16 @@ module.exports = {
       if (err) {
         return cb(err)
       }
-      console.log(hash)
+      values.password = hash;
+
+      cb();
+    });
+  },
+  beforeUpdate(values, cb) {
+    bcrypt.hash(values.password, 10, function (err, hash) {
+      if (err) {
+        return cb(err)
+      }
       values.password = hash;
 
       cb();
