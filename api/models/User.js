@@ -24,9 +24,6 @@ module.exports = {
     phone: {
       type: 'string',
     },
-    birthday: {
-      type: 'date',
-    },
 
     address: {
       type: 'string',
